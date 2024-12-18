@@ -1,0 +1,248 @@
+.home-blog {
+    display: flex;
+    padding: 100px 0px;
+    background-color: #f7f8f8;
+}
+
+.home-blog-inner {
+	/* width: 100%; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-blog-upper {
+    height: 142px;
+    font-weight: 800;
+}
+
+.home-blog-down-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.home-blog-item {
+    /* width: 33.33%; */
+    height: 505px;
+    /* background-color: #fff; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 5px 20px 0px rgb(82, 90, 101, 0.1); */
+    box-sizing: border-box;
+    padding: 0px 12px;
+    /* overflow: hidden; */
+}
+
+.home-blog-img {
+    width: 100%;
+    height: 246px;
+}
+
+.home-blog-item img {
+    width: 100%;
+    height: 100%;
+    height: 246px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.home-blog-item-inner {
+    position: relative;
+    display: block;
+    background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 5px 20px 0px rgb(82, 90, 101, 0.1);
+}
+
+.home-blog-img-main-div {
+    position: absolute;
+    top: 0;
+}
+
+.home-blogP {
+    width: 1140px;
+    text-align: center;
+    color: #ff9800;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.home-blogH {
+    width: 1140px;
+    text-align: center;
+    color: #404040;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+}
+
+.home-blog-description {
+    padding: 20px;
+    /* position: relative; */
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 3px solid #7b68ee;
+}
+
+.discription-titleh3 a i {
+    font-family: "font awesome 6 free";
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 1px;
+    margin-bottom: 10px;
+}
+
+
+
+.home-blog-description:hover span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #f1eafd;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s ease;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.home-blog-description:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.home-blog-description:hover span:nth-child(1) {
+    --n: 1;
+}
+
+.home-blog-description:hover span:nth-child(2) {
+    --n: 2;
+}
+
+.home-blog-description:hover span:nth-child(3) {
+    --n: 3;
+}
+
+.home-blog-description:hover span:nth-child(4) {
+    --n: 4;
+}
+
+
+.home-blog-description a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0px 20px 0px 0px;
+    text-decoration: none;
+}
+
+.home-blog-description i {
+    margin-right: 3px;
+    color: #7b68ee;
+}
+
+.discription-titleh3 {
+    margin: 5px 0px;
+}
+
+.discription-title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Dosis", sans-serif;
+    line-height: 1;
+}
+
+.discription-title:hover {
+    color: #7b68ee;
+    transition: all 0.4s ease-in-out;
+}
+
+.description-text {
+    color: #6a6c72;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.home-blog-read-more a {
+    color: #7b68ee;
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+}
+
+.home-blog-read-more i {
+    font-family: "Font Awesome 6 free";
+    font-weight: 600;
+    font-size: 13px;
+    padding-right: 10px;
+    color: #7b68ee;
+}
+
+.home-blog-read-more {
+    width: 100%;
+    height: 100%;
+}
+
+.home-blog-read-more,
+i:hover {
+    padding-right: -10px;
+}
+
+.home-blog-read-more {
+    width: 100%;
+    height: 100%;
+}
+
+.home-blog-read-more a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.home-blog-read-more a i {
+    transition: transform 400ms ease;
+}
+
+.home-blog-read-more a:hover i {
+    transform: translateX(5px);
+}
+
+.home-blog-hover-dots {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25px;
+    width: 109px;
+    margin-top: 42px;
+    margin-top: 42px;
+    position: relative;
+    right: -45%;
+}
+
+.home-blog-dots {
+    height: 14px;
+    width: 14px;
+    /* background-color: #7b68ee; */
+    /* background-color: #f1eafd; */
+    background-color: #cec1e6;
+    border-radius: 50%;
+}
+
+.dot2 {
+    transform: scale(1.2);
+    background-color: #7b68ee;
+}
+

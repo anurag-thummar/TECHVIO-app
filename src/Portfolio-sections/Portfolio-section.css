@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Catamaran", sans-serif;
+}
+
+.container{
+    display: block;
+    max-width: 1117px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+    box-sizing: border-box;
+}
+
+
+.portfolio {
+    background-color: #f7f8f8;
+    /* width: 100%;
+    height: auto; */
+    margin: 0 auto;
+}
+
+.portfolio-inner {
+    padding: 100px 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio1 {
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-upper {
+    width: 100%;
+    height: 154px;
+    font-weight: 800;
+}
+
+
+#portfolio-heading {
+    font-weight: 800;
+}
+
+.portfolio-down {
+    padding: 3px;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-down-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-img {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.portfolio-img img {
+    width: 348px;
+    height: 348px;
+    padding: 12px;
+    border-radius: 17px;
+}
+
+.img-overlay {
+    border-radius: 5px;
+    width: 328px;
+    height: 87px;
+    display: flex;
+    position: absolute;
+    bottom: -3%;
+    transform: translateY(-50%);
+    left: 6%;
+    opacity: 0;
+}
+
+.portfolio-img:hover .img-overlay {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.img-overlay-inner {
+    background-color: #fff;
+    width: 100%;
+    height: 57px;
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    transform: translateX(-10px);
+}
+
+.portfolio-img:hover .img-overlay-inner {
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+}
+
+.img-overlay-inner p {
+    color: #7b68ee;
+    font-size: 15px;
+    font-weight: 700;
+    transform: translateX(-20px);
+}
+
+.portfolio-img:hover .img-overlay-inner p {
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+}
+
+.img-overlay-inner a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+    font-family: "Dosis", sans-serif;
+}
+
+.portfolio-img:hover .img-overlay-inner h3 {
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+}
+
+.img-overlay-inner h3 {
+    transform: translateX(20px);
+}
+
+.wox {
+    width: 96px;
+    height: 88px;
+    background-color: #7b68ee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateX(10px);
+}
+
+.portfolio-img:hover .wox {
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+}
+
+.wox a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.wox i {
+    color: #fff;
+
+}
+
+.portfolio-link-icon {
+    width: 45px;
+    height: 100%;
+    color: #fff;
+    background-color: #7b68ee;
+}
+
+.portfolio-link-icon a {
+    text-decoration: none;
+}
+
+.portfolio-link-icon i {
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+}
+
+
+
+
+.portfolio-content-overlay {
+    /* display: block; */
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+
+}
+
+.portfolio-content-overlay p {}
+
+.portfolio-content-overlay h3 {}
+
+.center-text-title {
+    width: 100%;
+
+    color: #ff9800;
+    font-size: 16px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: "Dosis", sans-serif;
+}
+
+.center-text-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    color: #404040;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Dosis", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.truck{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .truckWrapper {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: hidden;
+  }
+  /* truck upper body */
+  .truckBody {
+    width: 130px;
+    height: fit-content;
+    margin-bottom: 6px;
+    animation: motion 1s linear infinite;
+  }
+  /* truck suspension animation*/
+  @keyframes motion {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  /* truck's tires */
+  .truckTires {
+    width: 130px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 15px;
+    position: absolute;
+    bottom: 0;
+  }
+  .truckTires svg {
+    width: 24px;
+    margin-right: 11px;
+  }
+  
+  .road {
+    width: 100%;
+    height: 1.5px;
+    background-color: #282828;
+    position: relative;
+    bottom: 0;
+    align-self: flex-end;
+    border-radius: 3px;
+  }
+  .road::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #282828;
+    right: -50%;
+    border-radius: 3px;
+    animation: roadAnimation 1.4s linear infinite;
+    border-left: 10px solid white;
+  }
+  .road::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #282828;
+    right: -65%;
+    border-radius: 3px;
+    animation: roadAnimation 1.4s linear infinite;
+    border-left: 4px solid white;
+  }
+  
+  .lampPost {
+    position: absolute;
+    bottom: 0;
+    right: -90%;
+    height: 90px;
+    animation: roadAnimation 1.4s linear infinite;
+  }
+  
+  @keyframes roadAnimation {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-350px);
+    }
+  }
