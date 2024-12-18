@@ -1,0 +1,268 @@
+.header-home-page__header {
+    position: relative;
+    z-index: 4;
+}
+
+.header-home-page__header::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    /* Ensures it starts at the top of the parent element */
+    left: 0;
+    /* Ensures it starts at the left of the parent element */
+    background-image: url("/public/assets/images/home-3-bg.jpg");
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    /* background-position: center;  */
+    z-index: 0;
+    /* Places it behind other content in the header */
+    width: 100%;
+    height: 100%;
+    /* Ensures it covers the entire parent element */
+    background-color: rgba(31, 48, 129, 0.3);
+    opacity: 0.985;
+}
+
+.header-home-page__header.alternative-theme {
+    background-color: transparent;
+    color: #555;
+}
+
+.header-home-page__header.alternative-theme::before {
+    content: " ";
+    position: absolute;
+    background-size: contain;
+    z-index: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 775px;
+    opacity: 0.985;
+}
+
+.header-home-page__header.alternative-theme .header-header-inner,
+.header-home-page__header.alternative-theme .header-menu-inner li a {
+    color: #555;
+}
+
+.header-home-page__header.alternative-theme button#support-btn {
+    background: linear-gradient(45deg, #f44336 48%, #ff9800 56%);
+    box-shadow: 0 7px 25px rgba(244, 67, 54, 0.25);
+}
+
+.header-home-page__header.alternative-theme #header-support-btn:hover {
+    color: #f44336;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+}
+
+.header-home-page__header.alternative-theme particle {
+    background-color: linear-gradient(45deg, #f44336 48%, #ff9800 56%);
+}
+
+.header-main-header {
+    width: 100%;
+    height: auto;
+    padding: 14px 0px;
+    /* background-color: transparent; */
+    z-index: 1;
+    position: inherit;
+    background-color: rgba(31, 48, 129, 0.3);
+    opacity: 0.985;
+}
+
+.header-inner {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo-and-title a {
+    width: 171px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu {
+    display: block;
+    clear: both;
+    margin: 30px 0;
+}
+
+.header-menu-inner {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-menu-inner li {
+    position: relative;
+}
+
+.header-menu-inner li a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-menu-inner li .header-sub-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    border-top: 2px solid #7b68ee;
+    margin: -6px 0 0 1px;
+    padding: 0;
+    list-style: none;
+    z-index: 2;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(23px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.header-menu-inner li .header-sub-menu:first-child {
+    margin: -6px 0 0 15px;
+}
+
+.header-menu-inner li .header-sub-menu li a {
+    display: block;
+    width: 197px;
+    padding: 10px 15px;
+    color: #404040;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0px 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 43px;
+    transition: 0s;
+}
+
+.fas.fa-chevron-down {
+    font-size: 10px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.header-menu-inner li:hover .header-sub-menu {
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.header-fas.fa-chevron-down {
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.header-menu-inner li .header-sub-menu li {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header-menu-inner li .header-sub-menu li:first-child a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.header-menu-inner li .header-sub-menu:hover li:first-child a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.header-menu-inner li .header-sub-menu li:last-child a {
+    border-bottom-color: 0px solid #f1f1f1;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.header-menu-inner li .header-sub-menu li a:hover {
+    background-color: #7b68ee;
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+}
+#action-button {
+    font-family: "Catamaran", sans-serif;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    border: none;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 7px 25px rgba(123, 104, 238, 0.25);
+    text-decoration: none;
+    background-color: #7b68ee;
+    color: #fff;
+    margin-top: 0;
+    z-index: 6;
+    height: 50px;
+    width: 149px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 25px;
+    display: flex;
+    overflow: hidden;
+}
+
+#action-button:active {
+    transform: translateY(3px);
+}
+
+#action-button:hover {
+    color: #7b68ee; /* Ensure this color is applied on hover */
+}
+
+#action-button::after,
+#action-button::before {
+    border-radius: 3px;
+}
+
+#action-button::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s, border 0.3s;
+    z-index: 2;
+}
+
+#action-button::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 175px;
+    background-color: #3e57d0;
+    border-radius: 50%;
+    transform: translate(-10px, -70px) scale(0.1);
+    opacity: 0;
+    z-index: -1;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+#action-button:hover::after {
+    opacity: 1;
+    transform-origin: 100px 100px;
+    transform: scale(1) translate(-10px, -70px);
+    background-color: #fff;
+}
