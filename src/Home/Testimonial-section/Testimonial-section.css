@@ -1,0 +1,194 @@
+.home-testimonial-section {
+    height: auto;
+    padding: 100px 0px 50px;
+    margin-bottom: 50px;
+}
+
+.home-testimonial-section .home-testimonial-upper {
+    padding-bottom: 50px;
+}
+
+.home-testimonial-section .home-testimonial-upper .testi {
+    /* width: 100%; */
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    color: #ff9800;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-testimonial-section .home-testimonial-upper .testi1 {
+    /* width: 100%; */
+    color: #404040;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+}
+
+.home-testimonial-section .home-testimonial-bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback {
+	width: 359px;
+	height: 445px;
+	background-color: #f7f8f8;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	margin: 0px 0px;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .client-feedback-inner {
+    padding: 35px 20px;
+    line-height: 2.7;
+    text-align: center;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .client-feedback-inner i {
+    color: #ffce39;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 1px;
+}
+
+@keyframes border-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .home-testimonial-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+/* Rotating border around the image */
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .home-testimonial-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-left-color: #7b68ee;
+    border-bottom-color: #7b68ee;
+    border-radius: 50%;
+    animation: border-rotate 5s infinite;
+}
+
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .home-testimonial-img img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .client-feedback-inner p.client-note {
+    color: #333;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .client-feedback-inner .star {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .client-feedback-inner .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.home-testimonial-section .home-testimonial-bottom .home-testimonial-bottom-inner .client-feedback .client-feedback-inner .user-location {
+    align-items: center;
+    justify-content: center;
+    color: #7b68ee;
+    margin-top: -15px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+}
+
+.home-testimonial-section .home-testimonial-inner .home-testimonial-bottom .home-testimonial-bottom-inner .owl-carousel {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.upper{
+    position: relative;
+}
+
+.owl-item.active{
+    margin-right: 0;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.fa-angle-left.left-arr {
+    position: absolute;
+	font-size: 25px;
+	top: 50%;
+	left: 0%;
+	transform: translate(0,-50%);
+    color: #7b68ee;
+}
+
+.fa-angle-right.right-arr {
+    position: absolute;
+	font-size: 25px;
+	top: 50%;
+	right: 0%;
+	transform: translate(0,-50%);
+    color: #7b68ee;
+}

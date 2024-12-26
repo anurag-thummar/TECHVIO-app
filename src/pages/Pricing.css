@@ -1,0 +1,134 @@
+.price-area {
+  margin: 70px 0px;
+}
+
+.price-area .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0px -20px;
+}
+
+.price-area .row .col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content {
+  text-align: left;
+  padding: 30px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 20px 0px rgb(82, 90, 101, 0.1);
+  box-shadow: 0px 5px 20px 0px rgb(82, 90, 101, 0.1);
+  transition: all 0.4s ease 0s;
+  margin-bottom: 30px;
+  margin: 0px 15px;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-tag {
+  position: relative;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-tag h3 {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 2px;
+  left: -45px;
+  width: 115px;
+  height: 50px;
+  display: flex;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px 0 0 25px;
+  background-color: #7b68ee;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(-90deg);
+  will-change: transform;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-heading .price-usd h2 {
+  color: #6f64e7;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 15px 0;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-heading .price-usd .price-small-text {
+  display: block;
+  color: #3e3e3e;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -8px;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-body {
+  text-align: center;
+}
+
+dl,
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-body ul li {
+  display: block;
+  font-size: 16px;
+  padding: 10px 0;
+  border-top: 1px dashed #dfe4e8;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-body .offer-list-none {
+  color: #b7b7b7;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-body ul li {
+  display: block;
+  font-size: 16px;
+  padding: 10px 0;
+  border-top: 1px dashed #dfe4e8;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-btn .price-btn-one {
+  padding: 12px 30px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #7b68ee;
+  background-color: #7b68ee;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.price-area .row .col-lg-4 .single-pricing-content .price-btn a {
+  color: #404040;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}

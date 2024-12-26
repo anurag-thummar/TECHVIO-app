@@ -1,0 +1,64 @@
+.error-area {
+	margin: 50px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-area .d-table .d-table-cell .error-content {
+  max-width: 700px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.error-area .d-table .d-table-cell .error-content h3 {
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  color: #0b0b31;
+}
+
+.error-area .d-table .d-table-cell .error-content p {
+  max-width: 520px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0 auto 20px;
+  color: #5f5f5f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  font-family: 'Catamaran', sans-serif;
+  margin-bottom: 15px;
+}
+
+.error-area .d-table .d-table-cell .error-content .default-btn-one {
+  display: inline-block;
+  color: #7b68ee;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 13px 35px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: transparent;
+  /* box-shadow: 0 7px 25px rgba(123, 104, 238, 0.25); */
+  text-decoration: none;
+  transition: 0.4s;
+  margin-top: 5px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid #7b68ee;
+}
+
+.error-area .d-table .d-table-cell .error-content .default-btn-one:hover {
+  color: #7b68ee;
+  background-color: #ffffff;
+  text-decoration: none;
+}
